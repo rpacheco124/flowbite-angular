@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-breadcrumb-item',
   template: `
     <svg

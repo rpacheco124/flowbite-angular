@@ -1,7 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { SidebarService } from '../../services';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-sidebar',
   template: `<aside
     class="h-full"

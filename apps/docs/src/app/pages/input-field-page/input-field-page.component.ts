@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'flowbite-input-field-page',
-  template: `<flowbite-demo-page>
+  template: `
+  <!-- <flowbite-demo-page>
     <flowbite-demo-example title="Input fields" [codes]="[examples[0]]">
       <form>
         <div class="mb-6 grid gap-6 md:grid-cols-2">
@@ -155,7 +156,8 @@ import { Component } from '@angular/core';
         </p>
       </flowbite-form-field>
     </flowbite-demo-example>
-  </flowbite-demo-page>`,
+  </flowbite-demo-page> -->
+  `,
 })
 export class InputFieldPageComponent {
   examples = [

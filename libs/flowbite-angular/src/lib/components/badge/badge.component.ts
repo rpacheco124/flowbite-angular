@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 export type BadgeColor =
   | 'blue'
@@ -13,6 +15,8 @@ export type BadgeColor =
 export type BadgeSize = 'xs' | 'sm';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   selector: 'flowbite-badge',
   template: `<span [class.group]="href">
     <a

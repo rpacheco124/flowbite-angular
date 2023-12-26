@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -8,6 +9,8 @@ import {
 import { highlightElement } from 'prismjs';
 
 @Component({
+  standalone: true,
+  imports: [NgIf],
   selector: 'flowbite-prism',
   template: `<pre
     *ngIf="language"

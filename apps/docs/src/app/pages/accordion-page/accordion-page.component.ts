@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
+import { AccordionComponent, AccordionContentComponent, AccordionPanelComponent, AccordionTitleComponent } from '@flowbite-angular/lib';
+import { DemoExampleComponent, DemoPageComponent } from '../../common';
 
 @Component({
+  standalone: true,
+  imports: [AccordionComponent, 
+            AccordionPanelComponent, 
+            AccordionTitleComponent, 
+            AccordionContentComponent,
+            DemoPageComponent, 
+            DemoExampleComponent],
   selector: 'flowbite-accordion-page',
   template: `
     <flowbite-demo-page>

@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, TemplateRef } from '@angular/core';
 
 export type AlertColor = 'blue' | 'red' | 'green' | 'yellow' | 'gray';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-alert',
   template: ` <div
     class="flex flex-col gap-2 p-4 text-sm"

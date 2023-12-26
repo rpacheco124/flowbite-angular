@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'flowbite-floating-label-page',
   template: `
-    <flowbite-demo-page>
+    <!-- <flowbite-demo-page>
       <flowbite-demo-example title="Floating Label Example">
         <div class="mb-6 grid items-end gap-6 md:grid-cols-3">
           <flowbite-form-field floatingLabelType="filled">
@@ -128,7 +128,7 @@ import { Component } from '@angular/core';
           </p>
         </flowbite-form-field>
       </flowbite-demo-example>
-    </flowbite-demo-page>
+    </flowbite-demo-page> -->
   `,
 })
 export class FloatingLabelPageComponent {

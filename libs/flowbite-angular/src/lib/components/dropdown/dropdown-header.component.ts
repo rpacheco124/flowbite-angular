@@ -1,7 +1,10 @@
 import { Component } from "@angular/core";
 import { DropdownComponent } from "./dropdown.component";
+import { CommonModule } from "@angular/common";
 
 @Component({
+    standalone: true,
+    imports: [CommonModule],
     selector: "flowbite-dropdown-header",
     template: `
         <div class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200">

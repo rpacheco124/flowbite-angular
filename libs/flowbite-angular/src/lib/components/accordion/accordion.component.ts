@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-accordion',
   template: ` <div
     class="divide-y divide-gray-200 overflow-hidden border-gray-200 dark:divide-gray-700 dark:border-gray-700"

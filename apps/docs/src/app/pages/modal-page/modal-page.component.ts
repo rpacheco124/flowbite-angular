@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+import { ButtonComponent, ModalBodyComponent, ModalComponent, ModalFooterComponent, ModalHeaderComponent } from '@flowbite-angular/lib';
+import { DemoExampleComponent, DemoPageComponent } from '../../common';
 
 
 @Component({
+    standalone: true,
+    imports: [ModalComponent, ModalHeaderComponent, ModalBodyComponent, ModalFooterComponent, ButtonComponent, DemoPageComponent, DemoExampleComponent],
     selector: 'flowbite-modal-page',
     template: `
         <flowbite-demo-page>

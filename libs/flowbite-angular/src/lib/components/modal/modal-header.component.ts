@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { ModalComponent } from './modal.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
+    standalone: true,
+    imports: [CommonModule],
     selector: 'flowbite-modal-header',
     template: `
         <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">

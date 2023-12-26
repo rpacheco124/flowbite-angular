@@ -13,8 +13,11 @@ import {
   ButtonSizes,
   spanBaseClass,
 } from './button.properties';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-button',
   template: `
     <button type="button" [class]="buttonClass" [disabled]="disabled">

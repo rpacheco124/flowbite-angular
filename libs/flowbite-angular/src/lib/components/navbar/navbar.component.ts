@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-navbar',
   template: ` <nav
     class="border-gray-200 bg-white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4"

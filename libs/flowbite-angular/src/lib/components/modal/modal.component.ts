@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
+    standalone: true,
+    imports: [CommonModule],
     selector: 'flowbite-modal',
     template: `
         <div tabindex="-1" aria-hidden="true"

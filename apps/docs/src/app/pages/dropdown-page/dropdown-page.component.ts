@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
+import { DropdownComponent, DropdownDividerComponent, DropdownHeaderComponent, DropdownItemComponent } from '@flowbite-angular/lib';
+import { DemoExampleComponent, DemoPageComponent } from '../../common';
 
 @Component({
+    standalone: true,
+    imports: [DropdownComponent, DropdownItemComponent, DropdownDividerComponent, DropdownHeaderComponent, DemoPageComponent, DemoExampleComponent],
     selector: 'flowbite-dropdown-page',
     template: `
         <flowbite-demo-page>
@@ -40,7 +44,7 @@ import { Component } from '@angular/core';
                                 Bonnie Green
                             </span>
                             <span className="block truncate text-sm font-medium">
-                                bonnie@flowbite.com
+                                bonnie&#64;flowbite.com
                             </span>
                         </flowbite-dropdown-header>
                         <flowbite-dropdown-item>Item 1</flowbite-dropdown-item>

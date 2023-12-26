@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
  const color:
@@ -84,6 +85,8 @@ const offsets = {
 };
 
 @Component({
+  standalone: true,
+  imports: [CommonModule],
   selector: 'flowbite-indicator',
   template: `
    <div class="flex-shrink-0" [ngClass]="[

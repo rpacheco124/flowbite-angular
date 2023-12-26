@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonComponent, IndicatorComponent } from '@flowbite-angular/lib';
+import { DemoExampleComponent, DemoPageComponent } from '../../common';
 
 @Component({
+  standalone: true,
+  imports: [IndicatorComponent, ButtonComponent, DemoPageComponent, DemoExampleComponent],
   selector: 'flowbite-indicator-page',
   template: `<flowbite-demo-page>
     <flowbite-demo-example subtitle="Use this example to create a simple indicator with mulitple colors and position it anywhere on the website."  title="Default indicator " [codes]="[examples[0]]">

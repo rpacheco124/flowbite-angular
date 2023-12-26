@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { DropdownComponent } from "./dropdown.component";
 
 @Component({
+    standalone: true,
     selector: "flowbite-dropdown-divider",
     template: `
         <li class="my-1 h-px bg-gray-100 dark:bg-gray-600"></li>

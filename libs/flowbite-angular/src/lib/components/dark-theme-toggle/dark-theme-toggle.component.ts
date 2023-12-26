@@ -2,8 +2,11 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { ThemeService } from '../../services';
 import { Subscription } from 'rxjs';
+import { NgIf } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [NgIf],
   selector: 'flowbite-dark-theme-toggle',
   template: ` <button
     type="button"

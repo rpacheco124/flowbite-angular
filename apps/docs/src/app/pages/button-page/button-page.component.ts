@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
+import { BadgeComponent, ButtonComponent } from '@flowbite-angular/lib';
+import { DemoExampleComponent, DemoPageComponent } from '../../common';
 
 @Component({
+  standalone: true,
+  imports: [ButtonComponent, BadgeComponent, DemoPageComponent, DemoExampleComponent],
   selector: 'flowbite-button-page',
   template: `<flowbite-demo-page>
     <flowbite-demo-example title="Default button" [codes]="[examples[0]]">
